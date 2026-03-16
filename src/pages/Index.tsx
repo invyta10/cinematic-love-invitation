@@ -1,12 +1,44 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import EnvelopeHero from "@/components/EnvelopeHero";
+import FloatingPetals from "@/components/FloatingPetals";
+import CoupleSection from "@/components/CoupleSection";
+import SaveTheDate from "@/components/SaveTheDate";
+import LoveStory from "@/components/LoveStory";
+import WeddingEvents from "@/components/WeddingEvents";
+import PhotoGallery from "@/components/PhotoGallery";
+import VenueSection from "@/components/VenueSection";
+import WhereToStay from "@/components/WhereToStay";
+import RSVPSection from "@/components/RSVPSection";
+import WeddingFooter from "@/components/WeddingFooter";
+import MusicToggle from "@/components/MusicToggle";
 
 const Index = () => {
+  const [envelopeOpen, setEnvelopeOpen] = useState(false);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background overflow-x-hidden">
+      <AnimatePresence>
+        {!envelopeOpen && (
+          <EnvelopeHero onOpen={() => setEnvelopeOpen(true)} />
+        )}
+      </AnimatePresence>
+
+      {envelopeOpen && (
+        <>
+          <FloatingPetals count={12} />
+          <MusicToggle />
+          <CoupleSection />
+          <SaveTheDate />
+          <LoveStory />
+          <WeddingEvents />
+          <PhotoGallery />
+          <VenueSection />
+          <WhereToStay />
+          <RSVPSection />
+          <WeddingFooter />
+        </>
+      )}
     </div>
   );
 };
