@@ -48,7 +48,7 @@ const SaveTheDate = () => {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        Rahul & Priya
+        Aariv & Priyanshi
       </motion.h2>
 
       <motion.p

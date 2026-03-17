@@ -9,7 +9,7 @@ const WeddingFooter = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-        <p className="font-script text-3xl sm:text-4xl gold-text mb-4">Rahul & Priya</p>
+        <p className="font-script text-3xl sm:text-4xl gold-text mb-4">Aariv & Priyanshi</p>
         <p className="font-display text-lg text-foreground/60 italic mb-8">
           We look forward to celebrating with you
         </p>

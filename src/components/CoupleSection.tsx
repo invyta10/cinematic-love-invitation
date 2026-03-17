@@ -35,14 +35,14 @@ const CoupleSection = () => {
         >
           <div className="relative inline-block mb-6">
             <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-full overflow-hidden mx-auto border-4 gold-border" style={{ boxShadow: "var(--shadow-elevated)" }}>
-              <img src={brideImg} alt="The Bride - Priya" className="w-full h-full object-cover" />
+              <img src={brideImg} alt="The Bride - Priyanshi" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-2 -right-2 w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
               <span className="font-script text-lg gold-text">♥</span>
             </div>
           </div>
           <p className="font-sans text-sm tracking-[0.2em] uppercase text-muted-foreground mb-2">The Bride</p>
-          <h3 className="font-script text-4xl sm:text-5xl gold-text">Priya</h3>
+          <h3 className="font-script text-4xl sm:text-5xl gold-text">Priyanshi</h3>
           <p className="font-display text-lg text-foreground/70 mt-2 italic">Daughter of Mr. & Mrs. Sharma</p>
         </motion.div>
 
@@ -55,14 +55,14 @@ const CoupleSection = () => {
         >
           <div className="relative inline-block mb-6">
             <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-full overflow-hidden mx-auto border-4 gold-border" style={{ boxShadow: "var(--shadow-elevated)" }}>
-              <img src={groomImg} alt="The Groom - Rahul" className="w-full h-full object-cover" />
+              <img src={groomImg} alt="The Groom - Aariv" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-2 -left-2 w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
               <span className="font-script text-lg gold-text">♥</span>
             </div>
           </div>
           <p className="font-sans text-sm tracking-[0.2em] uppercase text-muted-foreground mb-2">The Groom</p>
-          <h3 className="font-script text-4xl sm:text-5xl gold-text">Rahul</h3>
+          <h3 className="font-script text-4xl sm:text-5xl gold-text">Aariv</h3>
           <p className="font-display text-lg text-foreground/70 mt-2 italic">Son of Mr. & Mrs. Patel</p>
         </motion.div>
       </div>

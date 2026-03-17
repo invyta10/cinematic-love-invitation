@@ -18,7 +18,7 @@ const WaxSeal = () => (
       fontSize="18"
       fill="#FDF8E8"
     >
-      R&P
+      A&P
     </text>
   </svg>
 );
@@ -93,13 +93,12 @@ const EnvelopeHero = ({ onOpen }: EnvelopeHeroProps) => {
               <div className="absolute inset-2 rounded border border-gold-bright/30" />
 
               {/* Inner card peek */}
-              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 w-[85%] h-20 rounded-t bg-cream border border-gold/20" />
+              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 w-[85%] h-20 rounded-t" />
             </div>
 
             {/* Wax Seal */}
             <motion.div
-              className="absolute -bottom-5 left-1/2 -translate-x-1/2 z-20"
-              whileHover={{ scale: 1.1 }}
+              className="absolute top-16 left-1/2 -translate-x-1/2 z-20"
               animate={{ 
                 boxShadow: [
                   "0 0 15px rgba(212,175,55,0.3)",
@@ -163,14 +162,14 @@ const EnvelopeHero = ({ onOpen }: EnvelopeHeroProps) => {
 
               {/* Card sliding out */}
               <motion.div
-                className="absolute left-1/2 -translate-x-1/2 w-[85%] h-40 rounded bg-cream border border-gold/20"
+                className="absolute left-6 -translate-x-1/2 w-[85%] h-40 rounded bg-cream border border-gold/20"
                 initial={{ bottom: 10, y: 0 }}
                 animate={{ y: -200 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
+                transition={{ duration: 2.5, delay: 1.2 }}
                 style={{ boxShadow: "var(--shadow-elevated)" }}
               >
                 <div className="flex flex-col items-center justify-center h-full p-4">
-                  <p className="font-script text-2xl gold-text">Rahul & Priya</p>
+                  <p className="font-script text-2xl gold-text">Aariv & Priyanshi</p>
                   <p className="font-display text-sm text-foreground/60 mt-2">12 December 2026</p>
                 </div>
               </motion.div>
@@ -178,7 +177,7 @@ const EnvelopeHero = ({ onOpen }: EnvelopeHeroProps) => {
 
             {/* Seal breaking */}
             <motion.div
-              className="absolute -bottom-5 left-1/2 -translate-x-1/2"
+              className="absolute top-16 left-1/2 -translate-x-1/2"
               initial={{ scale: 1, opacity: 1 }}
               animate={{ scale: 1.5, opacity: 0 }}
               transition={{ duration: 0.4 }}
