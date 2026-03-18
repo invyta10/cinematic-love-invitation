@@ -2,13 +2,14 @@ import { useState } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import { useRef } from "react";
 import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
+import couple1 from "@/assets/couple-1.jpg";
+import couple2 from "@/assets/couple-2.jpg";
+import prewedding from "@/assets/story-1.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
 
-const images = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6];
+const images = [prewedding, couple2, gallery1, gallery6, gallery4, gallery5];
 
 const PhotoGallery = () => {
   const ref = useRef(null);
@@ -37,8 +38,8 @@ const PhotoGallery = () => {
         {images.map((img, i) => (
           <motion.div
             key={i}
-            className="relative overflow-hidden rounded-xl cursor-pointer group"
-            style={{ aspectRatio: i % 3 === 0 ? "4/5" : "3/4", boxShadow: "var(--shadow-resting)" }}
+            className="relative overflow-hidden rounded-xl cursor-pointer group aspect-[3/4]"
+            style={{ boxShadow: "var(--shadow-resting)" }}
             initial={{ opacity: 0, scale: 0.9 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.5, delay: i * 0.1 }}
