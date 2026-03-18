@@ -61,7 +61,7 @@ const LoveStory = () => {
 
       {/* Timeline line */}
       <div className="relative">
-        <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-gold/30 -translate-x-1/2" />
+        {/* <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-gold/30 -translate-x-1/2" /> */}
         {timeline.map((item, i) => (
           <TimelineItem key={item.year} item={item} index={i} />
         ))}
